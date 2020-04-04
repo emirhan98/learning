@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --my-font: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 10px;
+    color: var(--dark-color);
+    font-family: var(--primary-font);
+    scroll-behavior: smooth;
+}
+
+.box {
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 150px 400px 400px;
+    grid-template-columns: auto;
+    grid-gap: 10px 15px;
+    grid-template-areas: "Menu Menu sidebar" "Main Main sidebar" "Article Article sidebar" "Footer Footer Footer";
+}
+
+body {
+    font-family: var(--my-font);
+}
+
+.box1 {
+    background: rgba(50, 120, 200, 0.6);
+    grid-area: Menu;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2 {
+    background: rgba(46, 100, 161, 0.6);
+    grid-area: sidebar;
+}
+
+.box3 {
+    background: #fff;
+    grid-area: Main;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 13px;
+}
+
+.box5 {
+    background: #7ba4c0;
+    grid-area: Footer;
+}
+
+.box6 {
+    background: rgb(4, 245, 255);
+    grid-area: Article;
+}
+
+.anamenu {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.menu {
+    list-style-type: none;
+    margin-top: 10px;
+    height: 75%;
+    position: absolute;
+    text-align: center;
+}
+
+li {
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+    height: 50%;
+    transition: all 0.5s ease;
+    border: 1px solid rgba(50, 120, 200, 0.6);
+    border-radius: 2rem;
+    font-size: initial;
+    box-sizing: border-box;
+}
+
+nav ul li:hover {
+    background-color: #fff;
+}
+
+nav ul li:hover .linkler {
+    color: rgba(50, 120, 200, 0.6);
+}
+
+.linkler {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    float: right;
+    font-size: 60px;
+    text-transform: capitalize;
+    transform: skew(30deg);
+    transition: all 2s linear;
+    animation: gol 2s infinite;
+}
+
+@keyframes gol {
+    0% {
+        color: red;
+        transform: translateX(-100px);
+    }
+    25% {
+        transform: translateX(-70px);
+    }
+    50% {
+        color: #7ba4c0;
+        transform: translateX(-50px);
+    }
+    100% {
+        color: navy;
+        transform: translateX(-20px);
+    }
+}
+
+h1 {
+    margin-bottom: 15px;
+    color: #7ba4c0;
+}
+
+.content-top {
+    color: #7ba4c0;
+    letter-spacing: 5px;
+    justify-content: center;
+    text-align: center;
+    text-indent: 30px;
+}
