@@ -12,3 +12,6 @@ p::after {
     transition-duration: .3s;
     transition: all 3s ease;
 }
+body{
+background:#fff;
+}
