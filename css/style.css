@@ -1,0 +1,14 @@
+p::before {
+    content: "play";
+    background: red;
+    display: inline-block;
+}
+
+p::after {
+    content: "game";
+    color: black;
+    display: inline-block;
+    transition-property: all;
+    transition-duration: .3s;
+    transition: all 3s ease;
+}
